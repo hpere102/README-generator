@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+//const generateMarkdown = require('./generateMarkdown.js');
 //const { writeFile, copyFile } = require('./utils/generate-site.js');
 //const generatePage = require('./src/page-template.js');
 
@@ -87,10 +88,10 @@ inquirer.prompt([
         }
       },
     {
-      type: 'checkbox',
-      name: 'badge',
-      message: 'What did you build this project with? (Check all that apply)',
-      choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+      type: 'list',
+      name: 'license',
+      message: 'Choose a license for the project.',
+      choices: ['APM', 'AUR', 'Bower', 'Cocoapods', 'Conda - License', 'CPAN', 'Crates.io' , 'CTAn' , 'DUB' , 'Eclipse' , 'Github', 'Hex.pm' , 'NPM' , 'Ore License' , 'Packagist License' , 'PyPI - License', 'REUSE Compliance', 'Weblate component license',]
     },
     {
       type: 'input',
@@ -121,7 +122,7 @@ inquirer.prompt([
   ])
 
   .then(answers => {
-    const {title, description, installation, usage, contributing, tests, badge, username, email} = answers;
+    const {title, description, installation, usage, contributing, tests, license, username, email} = answers;
     const template=`# ${title}
         
 ## Description
@@ -139,8 +140,8 @@ ${contributing}
 ### Tests
 ${tests}.
 
-### Badge
-${badge}
+### Licenses
+${license}
 
 ### Contact
 [Github](https://www.github.com/${username})
