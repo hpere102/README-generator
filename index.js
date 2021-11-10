@@ -125,9 +125,13 @@ inquirer.prompt([
     const {title, description, installation, usage, contributing, tests, license, username, email} = answers;
     const template=`# ${title}
 
-#  ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
+       
         
-## Description
+##            ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
+
+
+
+Description
 ${description}.
         
 ### Installation
@@ -147,7 +151,7 @@ ${tests}.
 
 ### Contact
 [Github](https://www.github.com/${username}) <br>
-[Email}](mailto:${email})
+[Email](mailto:${email})
         
         
         `
