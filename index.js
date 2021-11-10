@@ -1,8 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-//const generateMarkdown = require('./generateMarkdown.js');
-//const { writeFile, copyFile } = require('./utils/generate-site.js');
-//const generatePage = require('./src/page-template.js');
+
 
 
 
@@ -91,7 +89,17 @@ inquirer.prompt([
       type: 'list',
       name: 'license',
       message: 'Choose a license for the project.',
-      choices: ['Apache',  'GNU' , 'MIT' , 'Mozilla', 'Eclipse', 'BSD']
+      choices: ['Apache',  'GNU' , 'MIT' , 'Mozilla', 'Eclipse', 'BSD' , 'None'],
+      validate: licenseInput => {
+          if('None') {
+              const noLicense = "No License";
+              return noLicense;
+          } else {
+              const yesLicense = `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`
+              return yesLicense;
+      }
+    }
+
     },
     {
       type: 'input',
@@ -122,19 +130,19 @@ inquirer.prompt([
   ])
 
   .then(answers => {
-    const {title, description, installation, usage, contributing, tests, license, username, email} = answers;
+    const {title, description, installation, usage, contributing, tests, license, username, email, yesLicense} = answers;
     const template=`# ${title}
 
        
         
-##            ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
+##            ${yesLicense}
 
 
 
-### Description
+## Description
 ${description}
         
-### Table of Contents
+## Table of Contents
 * [Description](#Description) <br>
 * [Table of Contents](#Table-of-Contents) <br>
 * [Installation](#Installation) <br>
@@ -156,8 +164,8 @@ ${contributing}
 ${tests}
 
 ### Licenses
-![badge](https://img.shields.io/badge/license-${license}-brightgreen)
-This project was created under the ${license} license.
+${yesLicense} <br>
+This project was created under ${license} license.
 
 ### Questions
 Contact me:
