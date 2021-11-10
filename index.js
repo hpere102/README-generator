@@ -91,7 +91,7 @@ inquirer.prompt([
       type: 'list',
       name: 'license',
       message: 'Choose a license for the project.',
-      choices: ['APM', 'AUR', 'Bower', 'Cocoapods', 'Conda - License', 'CPAN', 'Crates.io' , 'CTAn' , 'DUB' , 'Eclipse' , 'Github', 'Hex.pm' , 'NPM' , 'Ore License' , 'Packagist License' , 'PyPI - License', 'REUSE Compliance', 'Weblate component license',]
+      choices: ['Apache',  'GNU' , 'MIT' , 'Mozilla', 'Eclipse', 'BSD']
     },
     {
       type: 'input',
@@ -141,7 +141,7 @@ ${contributing}
 ${tests}.
 
 ### Licenses
-${license}
+![badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
 ### Contact
 [Github](https://www.github.com/${username})
