@@ -2,8 +2,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 
-
-
 const promptReadme = readmeInfo => {
 
 inquirer.prompt([
@@ -89,16 +87,8 @@ inquirer.prompt([
       type: 'list',
       name: 'license',
       message: 'Choose a license for the project.',
-      choices: ['Apache',  'GNU' , 'MIT' , 'Mozilla', 'Eclipse', 'BSD' , 'None'],
-      validate: licenseInput => {
-          if('None') {
-              const noLicense = "No License";
-              return noLicense;
-          } else {
-              const yesLicense = `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`
-              return yesLicense;
-      }
-    }
+      choices: ['Apache',  'GNU' , 'MIT' , 'Mozilla', 'Eclipse', 'BSD'],
+      
 
     },
     {
@@ -118,24 +108,20 @@ inquirer.prompt([
         type: 'input',
         name: 'email',
         message: 'Please enter your email address.',
-        validate: emailInput => {
-          if (emailInput) {
-            return true;
-          } else {
-            console.log('Please enter a valid email address!');
-            return false;
-          }
-        }
       },
+
   ])
 
+  
   .then(answers => {
-    const {title, description, installation, usage, contributing, tests, license, username, email, yesLicense} = answers;
+
+    const {title, description, installation, usage, contributing, tests, license, username, email} = answers;
+
     const template=`# ${title}
 
        
         
-##            ${yesLicense}
+##          ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
 
 
@@ -164,7 +150,7 @@ ${contributing}
 ${tests}
 
 ### Licenses
-${yesLicense} <br>
+![badge](https://img.shields.io/badge/license-${license}-brightgreen) <br>
 This project was created under ${license} license.
 
 ### Questions

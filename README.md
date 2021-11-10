@@ -1,13 +1,13 @@
-# Readme Generator
+# README Generator
 
        
         
-##            undefined
+##          ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 
 
 ## Description
-sdfsdgfsdfgsfgds 
+Generator for readme files using an npm script
         
 ## Table of Contents
 * [Description](#Description) <br>
@@ -19,26 +19,26 @@ sdfsdgfsdfgsfgds
 * [Questions](#Questions) 
 
 ## Installation
-fgdg dfg df g gddgfg dfgd g 
+npm install package
 
 ## Usage
-df gdfg dfgdf g
+creating readme files
 
 ## Contributing
-dfg dfg df g
+Hector Perez
 
 ## Tests
-d fg dfg dfg 
+n/a
 
 ### Licenses
-undefined <br>
-This project was created under None license.
+![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br>
+This project was created under MIT license.
 
 ### Questions
 Contact me:
 
-[Github](https://www.github.com/gfdsfgfdg) <br>
-[Email](mailto:dfgdfgdfgdgf)
+[Github](https://www.github.com/hpere102) <br>
+[Email](mailto:hpere102@fiu.edu)
         
         
         
