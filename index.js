@@ -124,6 +124,8 @@ inquirer.prompt([
   .then(answers => {
     const {title, description, installation, usage, contributing, tests, license, username, email} = answers;
     const template=`# ${title}
+
+#   ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
         
 ## Description
 ${description}.
