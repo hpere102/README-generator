@@ -144,8 +144,8 @@ ${tests}.
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
 ### Contact
-[Github](https://www.github.com/${username})
-[${email}](mailto:${email})
+[Github](https://www.github.com/${username}) <br>
+[Email}](mailto:${email})
         
         
         `
