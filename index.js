@@ -151,7 +151,7 @@ ${tests}
 
 ### Licenses
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen) <br>
-This project was created under ${license} license.
+This project was created under the ${license} license.
 
 ### Questions
 Contact me:
