@@ -18,9 +18,11 @@ N information for tests.
 ### Licenses
 ![badge](https://img.shields.io/badge/license-Mozilla-brightgreen)
 
-### Contact
+### Questions
+Contact:
+
 [Github](https://www.github.com/hpere102) <br>
-[Email}](mailto:dannyp11@ymail.com)
+[Email](mailto:dannyp11@ymail.com)
         
         
         
