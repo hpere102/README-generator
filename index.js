@@ -130,30 +130,38 @@ inquirer.prompt([
 ##            ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
 
-### Table of Contents
-[Description](#Description)
-[Installation](#Installation)
-
 
 ### Description
 ${description}
         
-### Installation
+### Table of Contents
+* [Description](#Description) <br>
+* [Table of Contents](#Table-of-Contents) <br>
+* [Installation](#Installation) <br>
+* [Usage](#Usage) <br>
+* [Tests](#Tests) <br>
+* [Licenses](#Licenses) <br>
+* [Questions](#Questions) 
+
+## Installation
 ${installation}
 
-### Usage
+## Usage
 ${usage}
 
-### Contributing
+## Contributing
 ${contributing}
 
-### Tests
+## Tests
 ${tests}
 
 ### Licenses
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
+This project was created under the ${license} license.
 
-### Contact
+### Questions
+Contact me:
+
 [Github](https://www.github.com/${username}) <br>
 [Email](mailto:${email})
         
@@ -162,7 +170,7 @@ ${tests}
     
        
 fs.writeFile("README.md", template, err =>
-  err ? console.log(err) : console.log('All Set!')
+  err ? console.log(err) : console.log('You are all set! Your README.md file has been created.')
 );
   
   
