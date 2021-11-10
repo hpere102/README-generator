@@ -130,12 +130,16 @@ inquirer.prompt([
 ##            ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
 
 
+### Table of Contents
+[Description](#Description)
+[Installation](#Installation)
 
-Description
-${description}.
+
+### Description
+${description}
         
 ### Installation
-${installation}.
+${installation}
 
 ### Usage
 ${usage}
@@ -144,7 +148,7 @@ ${usage}
 ${contributing}
 
 ### Tests
-${tests}.
+${tests}
 
 ### Licenses
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen)
