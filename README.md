@@ -10,8 +10,8 @@ Generator that creates a readme file by answering a set of questions from the co
 * [Table of Contents](#Table-of-Contents) <br>
 * [Installation](#Installation) <br>
 * [Usage](#Usage) <br>
+* [Contributing](#Contributing) <br>
 * [Tests](#Tests) <br>
-* [Licenses](#Licenses) <br>
 * [Questions](#Questions) 
 
 ## Installation
