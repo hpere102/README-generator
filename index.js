@@ -163,7 +163,7 @@ Contact me:
         `
     
        
-fs.writeFile("README.md", template, err =>
+fs.writeFile("./dist/README.md", template, err =>
   err ? console.log(err) : console.log('You are all set! Your README.md file has been created.')
 );
   
