@@ -1,14 +1,10 @@
-# Readme Generator
-
-       
-        
-##          ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
-
-
+# README Generator
 
 ## Description
-Generator that provides a readme file after answering set questions
+Generator that creates a readme file by answering a set of questions from the command line
         
+![command line example](media/screenshot.png)
+
 ## Table of Contents
 * [Description](#Description) <br>
 * [Table of Contents](#Table-of-Contents) <br>
@@ -22,23 +18,16 @@ Generator that provides a readme file after answering set questions
 npm install package
 
 ## Usage
-creating quick and simple readme files
+creates quick and simple readme files
 
 ## Contributing
-hector perez
+Hector Perez
 
 ## Tests
 n/a
-
-### Licenses
-![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br>
-This project was created under the MIT license.
 
 ### Questions
 Contact me:
 
 [Github](https://www.github.com/hpere102) <br>
-[Email](mailto:danny@yahoo.com)
-        
-        
-        
+[Email](mailto:hpere102@fiu.edu)
