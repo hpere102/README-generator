@@ -7,7 +7,7 @@
 
 
 ## Description
-generator that creates readme files by answering a set of questions
+generator that creates a readme files based off a set of question the user inputs
         
 ## Table of Contents
 * [Description](#Description) <br>
@@ -19,10 +19,10 @@ generator that creates readme files by answering a set of questions
 * [Questions](#Questions) 
 
 ## Installation
-npm install package
+npm package install
 
 ## Usage
-creates easy and quick readme files
+creates quick and easy readme files
 
 ## Contributing
 Hector Perez
