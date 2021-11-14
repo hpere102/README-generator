@@ -1,4 +1,4 @@
-# README Generator
+# Readme Generator
 
        
         
@@ -7,7 +7,7 @@
 
 
 ## Description
-Generator for readme files using an npm script
+Generator that provides a readme file after answering set questions
         
 ## Table of Contents
 * [Description](#Description) <br>
@@ -22,23 +22,23 @@ Generator for readme files using an npm script
 npm install package
 
 ## Usage
-creating readme files
+creating quick and simple readme files
 
 ## Contributing
-Hector Perez
+hector perez
 
 ## Tests
 n/a
 
 ### Licenses
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br>
-This project was created under MIT license.
+This project was created under the MIT license.
 
 ### Questions
 Contact me:
 
 [Github](https://www.github.com/hpere102) <br>
-[Email](mailto:hpere102@fiu.edu)
+[Email](mailto:danny@yahoo.com)
         
         
         
